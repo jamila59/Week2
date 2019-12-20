@@ -9,34 +9,39 @@ namespace Counter.Models
   {
    public string Word  { get; set; } 
    public string Sentence { get; set; }
-   public int Counter { get; set; } 
+   public int Score { get; set; } 
      
   
     public Term(string word, string sentence)
     {
        Word = word;
        Sentence = sentence;
-       Counter = 0;
+       Score = 0;
     }
-       
-        
-        public int Match(string word, string sentence)
+
+   
+    public int Match(string word, string sentence)
+    {
+      string wordUpper = word.ToUpper();
+      string sentenceUpper = sentence.ToUpper();
+      Console.WriteLine(sentenceUpper);
+      string[] sentenceSplit = sentenceUpper.Split(' ');
+      for (int i=0; i < sentenceSplit.Length; i++)
+      {
+        if (sentenceSplit[i] == wordUpper)
         {
-         string wordUpper = word.ToUpper();
-         string sentenceUpper = sentence.ToUpper();
-         Console.WriteLine(sentenceUpper);
-         string[] sentenceSplit = sentenceUpper.Split(' ');
-         for (int i=0; i < sentenceSplit.Length; i++)
-         {
-           if (sentenceSplit[i] == wordUpper)
-           {
-             Counter +=1;
-           }
-         }
-          return Counter;  
+          Score +=1;
+        }
       }
+      return Score;  
     }
+    public int getScore()
+    {
+      return Score;
+    }
+
   }
-  
+}
+
  
   

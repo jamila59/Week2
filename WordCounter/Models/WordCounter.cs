@@ -10,16 +10,14 @@ namespace Counter.Models
    public string Word  { get; set; } 
    public string Sentence { get; set; }
    public int Score { get; set; } 
-     
-  
+    
     public Term(string word, string sentence)
     {
        Word = word;
        Sentence = sentence;
        Score = 0;
     }
-
-   
+    
     public int RepeatCounter(string word, string sentence)
     {
       string wordUpper = word.ToUpper();
@@ -38,7 +36,6 @@ namespace Counter.Models
     {
       return Score;
     }
-
   }
 }
 

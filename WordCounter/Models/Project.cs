@@ -12,7 +12,7 @@ namespace Project.Models
         {
            Console.WriteLine("Enter a sentence:");
            string userSentence = Console.ReadLine();
-           if (string.IsNullOrEmpty(userSentence) == true)
+           if (string.IsNullOrEmpty(userSentence) == true || userSentence != "" )
            {
                 Console.WriteLine("Invalid input, try again.");
                 Console.WriteLine("Enter a sentence:");
@@ -21,7 +21,7 @@ namespace Project.Models
             }       
             Console.WriteLine("Enter a word:");
             string userWord = Console.ReadLine();
-            if (string.IsNullOrEmpty(userWord) == true)
+            if (string.IsNullOrEmpty(userWord) == true || userSentence != "")
             {
                 Console.WriteLine("Invalid input, try again.");
                 Console.WriteLine("Enter a word:");
@@ -29,7 +29,7 @@ namespace Project.Models
             }
             Term user = new Term(userWord, userSentence);
             user.RepeatCounter(userWord, userSentence);
-            Console.WriteLine(" "+ userWord + "  appears  " + user.getScore()+ "  " + "time(s) in sentence.");
+            Console.WriteLine(" "+ userWord + "  appears  " + user.getScore()+ "  " + "time(s) in the sentence.");
         }
     }
 }

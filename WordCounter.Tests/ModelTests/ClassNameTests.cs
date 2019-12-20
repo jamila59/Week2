@@ -15,13 +15,22 @@ namespace Counter.Tests
       Assert.AreEqual(typeof(Term), example.GetType());
     }
     [TestMethod]
-    public void Match_ChangesToUpper_String()
+    public void Match_ChecksForMatches_Int()
     {
       string up = "string";
       string up2 = "string of words";
       Term example  = new Term(up , up2);
-      string result = example.Match(up, up2);
-      Assert.AreEqual(up2, result);
+      int result = example.Match(up, up2);
+      Assert.AreEqual(1, result);
+    }
+    [TestMethod]
+    public void Match_ChecksForNonMatches_Int()
+    {
+      string up = "string";
+      string up2 = "strings of words";
+      Term example  = new Term(up , up2);
+      int result = example.Match(up, up2);
+      Assert.AreEqual(0, result);
     }
   }
 }

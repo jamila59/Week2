@@ -11,7 +11,7 @@ A C# program where the user is prompted to enter a word and then a sentence. Aft
 
 ### Specs
 | Spec | Input | Output | Description |
-| :-------------     | :------------- | :------------- |
+| :-------------     | :------------- | :------------- |:------------- |
 | **User inputs one word string** | Input : word | String: "word" | Desc: Prog. gathers word form user| 
 | **User inputs sentence** | Input : search for the word "word" | String : "search for the word "word""| Desc: Prog. gathers sentence  from user|
 | **User inputs get changed to Upper** | Input: word | Output: "WORD" | Desc: Updating case-sensitivity |

@@ -12,12 +12,12 @@ A C# program where the user is prompted to enter a word and then a sentence. Aft
 ### Specs
 | Spec | Input | Output | Description |
 | :-------------     | :------------- | :------------- |:------------- |
-| **User inputs one word string** | Input : word | String: "word" | Desc: Prog. gathers word form user| 
-| **User inputs sentence** | Input : search for the word "word" | String : "search for the word "word""| Desc: Prog. gathers sentence  from user|
-| **User inputs get changed to Upper** | Input: word | Output: "WORD" | Desc: Updating case-sensitivity |
-| **Program check for how many times to word appears** | Input: word | Output: the word "word" appears 2 times in the sentence | Desc: Runs a count|
-| **Program checks for full word matches only** | Word: "cat" Sentence: "I'm walking to the cathedral."| Output: the word "cat" appears 0 times in the sentence| Desc: Catches prog. error|
-| **Program runs an input validation** | Input: null "| Output: Invalid input, try again.| Desc: Catches prog. error|
+| **User inputs one word string** | **Input:**  word | **String:** "word" | **Desc:** Gathers word form user| 
+| **User inputs sentence** | **Input:** search for the word "word" | **String:** "search for the word "word""| **Desc:** Gathers sentence  from user|
+| **User inputs get changed to Upper** | **Input:** word | Output: "WORD" | **Desc:** Updating case-sensitivity |
+| **Program check for how many times to word appears** | **Input:** word | **Output:** the word "word" appears 2 times in the sentence | **Desc:** Runs a count|
+| **Program checks for full word matches only** | **Word:** "Cat" **Sentence:** " I'm walking to the cathedral"| **Output:** The word "cat" appears 0 times in the sentence| **Desc:** Catches error|
+| **Program runs an input validation** | **Input:** Null | **Output:** Invalid input, try again| **Desc:** Catches error|
 
 ## Setup/Installation Requirements
 
@@ -40,11 +40,16 @@ A C# program where the user is prompted to enter a word and then a sentence. Aft
 
 _Please contact Jamila Aliyeva with questions and comments at Aliyeva852@gmail.com ._
 
-### License
+### MIT License
+Copyright (c) 2019 Jamila Aliyeva
 
-*MIT License*
+*Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Copyright (c) 2019 **_Jamila Aliyeva_**
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
+
+
+Copyright (c) 2016 **_Jamila Aliyeva_**
 
 

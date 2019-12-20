@@ -6,3 +6,5 @@
 | **User inputs get changed to Upper** | Input: word | Output: "WORD" |
 | **Program check for how many times to word appears** | Input: word | Output: the word: "Word" appears twice  in the sentence |
 | **Program checks for full word matches only** | Input: word "cat" and sentence "I'm walking to the cathedral."| Output: "cat" not found|
+
+**I chose these input values because they are repetitive and they demonstrate the simplest way to test the behaviour the specs cover.**

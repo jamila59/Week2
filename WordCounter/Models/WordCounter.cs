@@ -20,11 +20,10 @@ namespace Counter.Models
     }
 
    
-    public int Match(string word, string sentence)
+    public int RepeatCounter(string word, string sentence)
     {
       string wordUpper = word.ToUpper();
       string sentenceUpper = sentence.ToUpper();
-      Console.WriteLine(sentenceUpper);
       string[] sentenceSplit = sentenceUpper.Split(' ');
       for (int i=0; i < sentenceSplit.Length; i++)
       {

@@ -19,7 +19,17 @@ namespace Project.Models
                 userSentence = Console.ReadLine();
                 
             }       
-            
+            Console.WriteLine("Enter a word:");
+            string userWord = Console.ReadLine();
+            if (string.IsNullOrEmpty(userWord) == true)
+            {
+                Console.WriteLine("Invalid input, try again.");
+                Console.WriteLine("Enter a word:");
+                userWord = Console.ReadLine();
+            }
+            Term user = new Term(userWord, userSentence);
+            user.RepeatCounter(userWord, userSentence);
+            Console.WriteLine(" "+ userWord + "  appears  " + user.getScore()+ "  " + "time(s) in sentence.");
         }
     }
 }

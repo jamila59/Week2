@@ -16,6 +16,28 @@ namespace Counter.Tests
       Term example = new Term("string", "string of words");
       Assert.AreEqual(typeof(Term), example.GetType());
     }
+
+    [TestMethod]
+    public void SentenceConstructor_CreatesInstance_Sentence()
+    {
+      Term example = new Term("string", "string of words");
+      Assert.AreEqual(typeof(Term), example.GetType());
+    }
+
+    [TestMethod]
+    public void RepeatCounter_ChangesWordToUpper_String()
+    {
+      string input = "string";
+      string inputUpper = input.ToUpper();
+      Assert.AreEqual("STRING", inputUpper);
+    }
+    [TestMethod]
+    public void RepeatCounter_ChangesSentenceToUpper_String()
+    {
+      string inputSentence = "string sentence";
+      string inputUpper = inputSentence.ToUpper();
+      Assert.AreEqual("STRING SENTENCE", inputUpper);
+    }
     [TestMethod]
     public void RepeatCounter_ChecksForMatches_Int()
     {
